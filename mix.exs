@@ -1,10 +1,12 @@
 defmodule Weddell.Mixfile do
   use Mix.Project
 
+  @version "0.1.0-alpha.1"
+
   def project do
     [
       app: :weddell,
-      version: "0.1.0",
+      version: @version,
       elixir: "~> 1.5",
       elixirc_paths: elixirc_paths(Mix.env),
       start_permanent: Mix.env == :prod,
@@ -13,7 +15,7 @@ defmodule Weddell.Mixfile do
       name: "Weddell",
       description: description(),
       source_url: "https://github.com/cjab/weddell",
-      docs: [main: "README",
+      docs: [main: "readme",
              extras: ["README.md"]]
     ]
   end
@@ -34,19 +36,19 @@ defmodule Weddell.Mixfile do
     [
       # GRPC
       {:protobuf, "~> 0.5"},
-      {:grpc, github: "tony612/grpc-elixir", branch: :master},
+      {:grpc, "~> 0.3.0-alpha.2"},
       {:certifi, "~> 2.0"},
 
       # Testing
-      {:mox, "~> 0.3", only: :test},
-      {:apex, "~> 1.2", only: [:test, :dev]},
+      {:mox, "~> 0.4", only: :test},
       {:uuid, "~> 1.1", only: :test},
-      {:wait_for_it, github: "cjab/wait_for_it", branch: "update-ex-doc", only: :test},
-      {:dialyxir, "~> 0.5", only: [:dev], runtime: false},
+      {:wait_for_it, "~> 1.1", only: :test},
+      {:apex, "~> 1.2", only: [:test, :dev]},
 
-      # Docs
-      {:ex_doc, "~> 0.16", only: :docs},
-      {:inch_ex, ">= 0.0.0", only: :docs},
+      # Dev
+      {:ex_doc, "~> 0.18", only: :dev},
+      {:inch_ex, ">= 0.0.0", only: :dev},
+      {:dialyxir, "~> 0.5", only: :dev, runtime: false},
     ]
   end
 

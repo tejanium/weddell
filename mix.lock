@@ -6,7 +6,7 @@
   "dialyxir": {:hex, :dialyxir, "0.5.1", "b331b091720fd93e878137add264bac4f644e1ddae07a70bf7062c7862c4b952", [:mix], [], "hexpm"},
   "earmark": {:hex, :earmark, "1.2.6", "b6da42b3831458d3ecc57314dff3051b080b9b2be88c2e5aa41cd642a5b044ed", [:mix], [], "hexpm"},
   "ex_doc": {:hex, :ex_doc, "0.19.1", "519bb9c19526ca51d326c060cb1778d4a9056b190086a8c6c115828eaccea6cf", [:mix], [{:earmark, "~> 1.1", [hex: :earmark, repo: "hexpm", optional: false]}, {:makeup_elixir, "~> 0.7", [hex: :makeup_elixir, repo: "hexpm", optional: false]}], "hexpm"},
-  "grpc": {:git, "https://github.com/tony612/grpc-elixir.git", "936f5362bb1f16e671d368605f0195328d16e441", [branch: :master]},
+  "grpc": {:hex, :grpc, "0.3.0-alpha.2", "ad5654d5dad44b99e8afa3ec4d540391c38a0f64001f21ba88e36720cb2014e5", [:mix], [{:cowboy, "~> 2.2", [hex: :cowboy, repo: "hexpm", optional: false]}, {:gun, ">= 1.0.0-pre.5", [hex: :gun, repo: "hexpm", optional: false]}, {:protobuf, "~> 0.5", [hex: :protobuf, repo: "hexpm", optional: false]}], "hexpm"},
   "gun": {:hex, :gun, "1.2.0", "9878541161fb9e0d2fd1b3b38f001ac9c68e3f9075ed647b7827208dc8b3ec2b", [:rebar3], [{:cowlib, "~> 2.6.0", [hex: :cowlib, repo: "hexpm", optional: false]}], "hexpm"},
   "inch_ex": {:hex, :inch_ex, "1.0.1", "1f0af1a83cec8e56f6fc91738a09c838e858db3d78ef5f2ec040fe4d5a62dabf", [:mix], [{:poison, "~> 1.5 or ~> 2.0 or ~> 3.0", [hex: :poison, repo: "hexpm", optional: false]}], "hexpm"},
   "makeup": {:hex, :makeup, "0.5.5", "9e08dfc45280c5684d771ad58159f718a7b5788596099bdfb0284597d368a882", [:mix], [{:nimble_parsec, "~> 0.4", [hex: :nimble_parsec, repo: "hexpm", optional: false]}], "hexpm"},
@@ -18,5 +18,5 @@
   "protobuf": {:hex, :protobuf, "0.5.4", "2e1b8eec211aff034ad8a14e3674220b0158bfb9a3c7128ac9d2a1ed1b3724d3", [:mix], [], "hexpm"},
   "ranch": {:hex, :ranch, "1.6.2", "6db93c78f411ee033dbb18ba8234c5574883acb9a75af0fb90a9b82ea46afa00", [:rebar3], [], "hexpm"},
   "uuid": {:hex, :uuid, "1.1.8", "e22fc04499de0de3ed1116b770c7737779f226ceefa0badb3592e64d5cfb4eb9", [:mix], [], "hexpm"},
-  "wait_for_it": {:git, "https://github.com/cjab/wait_for_it.git", "e7e82c3a40b215b3e89ca715c04757249bdfd739", [branch: "update-ex-doc"]},
+  "wait_for_it": {:hex, :wait_for_it, "1.1.1", "973c3beb9e3d8371796a09985ede4a4c396050325ea6dc3b835e0fd481595721", [:mix], [], "hexpm"},
 }
